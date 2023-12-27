@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default='chrome',
                      help="Choose browser: chrome or firefox or safari")
-    parser.addoption("--language", action="store", default=None,
+    parser.addoption("--language", action="store", default="en",
                      help="Choose language: e.g., en, es, fr, etc.")
     parser.addoption("--headless", action="store_true",
                      help="Run the browser in headless mode")
